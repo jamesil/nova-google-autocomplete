@@ -1,6 +1,6 @@
 <?php
 
-namespace YieldStudio\NovaGoogleAutocomplete;
+namespace Jamesil\NovaGoogleAutocomplete;
 
 use Laravel\Nova\Fields\Text;
 

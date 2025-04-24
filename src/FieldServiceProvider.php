@@ -1,6 +1,6 @@
 <?php
 
-namespace YieldStudio\NovaGoogleAutocomplete;
+namespace Jamesil\NovaGoogleAutocomplete;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

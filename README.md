@@ -18,7 +18,7 @@ composer require yieldstudio/nova-google-autocomplete
 Now publish config and localization files:
 
 ```shell
-php artisan vendor:publish --provider="YieldStudio\NovaGoogleAutocomplete\FieldServiceProvider"
+php artisan vendor:publish --provider="Jamesil\NovaGoogleAutocomplete\FieldServiceProvider"
 ```
 
 Create an app and enable Places API and create credentials to get your API key
@@ -128,8 +128,8 @@ Which would return:
 You can change the type of places that are returned by the autocomplete using the placeType() method.  You can use any of the values listed at [https://developers.google.com/places/supported_types#table3](https://developers.google.com/places/supported_types#table3)
 
 ```php
-use YieldStudio\NovaGoogleAutocomplete\AddressMetadata;
-use YieldStudio\NovaGoogleAutocomplete\GoogleAutocomplete;
+use Jamesil\NovaGoogleAutocomplete\AddressMetadata;
+use Jamesil\NovaGoogleAutocomplete\GoogleAutocomplete;
 
 // This autocomplete field will return results that match a business name instead of address.
 // All the same address data is still stored.
