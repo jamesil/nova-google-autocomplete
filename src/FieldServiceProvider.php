@@ -20,14 +20,13 @@ class FieldServiceProvider extends ServiceProvider
             ], 'nova-google-autocomplete-config');
         }
 
-
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'nova-google-autocomplete');
         $this->loadJsonTranslationsFrom(resource_path('lang/vendor/nova-google-autocomplete'));
 
         Nova::serving(function (ServingNova $event) {
-            Nova::script('google-autocomplete', __DIR__ . '/../dist/js/field.js');
+            Nova::script('nova-google-autocomplete', __DIR__ . '/../dist/js/field.js');
             Nova::remoteScript('https://maps.googleapis.com/maps/api/js?key='.config('nova-google-autocomplete.api_key').'&libraries=places');
-            Nova::translations(resource_path('lang/vendor/nova-google-autocomplete/' . app()->getLocale() . '.json'));
+            Nova::translation('nova-google-autocomplete', resource_path('lang/vendor/nova-google-autocomplete/' . app()->getLocale() . '.json'));
         });
     }
 }
