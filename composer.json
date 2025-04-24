@@ -1,15 +1,14 @@
 {
-    "name": "yieldstudio/nova-google-autocomplete",
+    "name": "jamesil/nova-google-autocomplete",
     "description": "A Laravel Nova Google autocomplete field.",
     "keywords": [
-        "yieldstudio",
         "laravel",
         "nova",
         "google",
         "autocomplete",
         "address"
     ],
-    "homepage": "https://github.com/YieldStudio/nova-google-autocomplete",
+    "homepage": "https://github.com/jamesil/nova-google-autocomplete",
     "license": "MIT",
     "authors": [
         {
@@ -23,6 +22,11 @@
             "email": "james@yieldstudio.fr",
             "homepage": "https://yieldstudio.fr",
             "role": "Fork maintener"
+        },
+        {
+            "name": "James Embling",
+            "email": "james@econsulting.co.nz",
+            "role": "Fork maintainer"
         }
     ],
     "repositories": [
@@ -37,13 +41,13 @@
     },
     "autoload": {
         "psr-4": {
-            "YieldStudio\\NovaGoogleAutocomplete\\": "src/"
+            "Jamesil\\NovaGoogleAutocomplete\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "YieldStudio\\NovaGoogleAutocomplete\\FieldServiceProvider"
+                "Jamesil\\NovaGoogleAutocomplete\\FieldServiceProvider"
             ]
         }
     },
